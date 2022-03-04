@@ -21,7 +21,7 @@ import CardImg0 from "./card-images/card-img-0.png";
 import CardImg1 from "./card-images/card-img-1.png";
 
 // banners
-import DashboardBanner from "./banners/dashboard-header-banner.png";
+import DashboardBanner from "./banners/dashboard-header-banner.svg";
 
 // Export all assets
 export {
