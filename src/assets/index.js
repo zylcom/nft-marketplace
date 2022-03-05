@@ -19,6 +19,7 @@ import TransactionIcon from "./icons/transaction-icon.svg";
 // images
 import CardImg0 from "./card-images/card-img-0.png";
 import CardImg1 from "./card-images/card-img-1.png";
+import ProfilePic from "./images/profile-pic.png";
 
 // banners
 import DashboardBanner from "./banners/dashboard-header-banner.svg";
@@ -36,6 +37,7 @@ export {
   HeartIcon,
   MenuIcon,
   NotifIcon,
+  ProfilePic,
   SearchIcon,
   SettingIcon,
   TransactionIcon,
