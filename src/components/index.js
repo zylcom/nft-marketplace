@@ -5,6 +5,7 @@ import EthereumDisplay from "./EthereumDisplay";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Menu from "./Menu";
+import MenuItem from "./MenuItem";
 
 // Export component
-export { Icon, Avatar, EthereumDisplay, Navbar, Sidebar, Menu };
+export { Icon, Avatar, EthereumDisplay, Navbar, Sidebar, Menu, MenuItem };
