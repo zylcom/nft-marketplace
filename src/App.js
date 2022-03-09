@@ -1,12 +1,17 @@
 import { Outlet } from "react-router-dom";
-import { Navbar } from "./components";
+import { Navbar, Sidebar } from "./components";
 
 function App() {
   return (
-    <div className="bg-dark-gun-metal">
-      <Navbar />
-      <h1>Welcome </h1>
-      <Outlet />
+    <div className="bg-dark-gun-metal lg:flex">
+      <div>
+        <div className="w-[120px]"></div>
+        <Sidebar />
+      </div>
+      <div className="w-full">
+        <Navbar />
+        <Outlet />
+      </div>
     </div>
   );
 }
