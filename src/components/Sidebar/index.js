@@ -1,6 +1,7 @@
 import React from "react";
 import { CrossIcon, ETHLogo } from "src/assets";
 import EthereumDisplay from "../EthereumDisplay";
+import { Menu } from "src/components";
 
 function Sidebar() {
   return (
@@ -24,6 +25,9 @@ function Sidebar() {
         </div>
         <div className="absolute left-0 bottom-0 h-screen w-full overflow-scroll">
           <div className="h-200px fixed w-full bg-dark-gun-metal md:w-1/2 lg:hidden"></div>
+          <div className="pt-[200px] lg:pt-[88px]">
+            <Menu />
+          </div>
         </div>
       </div>
     </div>
