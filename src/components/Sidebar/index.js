@@ -23,7 +23,7 @@ function Sidebar() {
         <div className="relative z-10 my-7 px-4 lg:hidden">
           <EthereumDisplay />
         </div>
-        <div className="absolute left-0 bottom-0 h-screen w-full overflow-scroll">
+        <div className="absolute left-0 bottom-0 h-screen w-full overflow-y-auto">
           <div className="h-200px fixed w-full bg-dark-gun-metal md:w-1/2 lg:hidden"></div>
           <div className="pt-[200px] lg:pt-[88px]">
             <Menu />
