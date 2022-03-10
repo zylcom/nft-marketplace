@@ -12,7 +12,18 @@ function Header() {
           Discover limited-edition digital artwork Create, Sell, and Collect
           yours now!
         </p>
-        <div className="flex gap-[3.72px] md:gap-2.5"></div>
+        <div className="flex gap-[3.72px] md:gap-2.5">
+          <button className="mt-[23px] w-[72px] rounded-[4px] bg-white p-1 md:mt-12 md:w-auto md:px-3 md:py-2.5 lg:py-3 lg:px-5">
+            <p className="bg-gradient-to-br from-lavender-indigo to-very-light-blue bg-clip-text text-[length:8px] font-medium text-transparent md:text-sm">
+              Start Create
+            </p>
+          </button>
+          <button className="mt-[23px] w-[72px] rounded-[4px] bg-white p-1 md:mt-12 md:w-auto md:px-3 md:py-2.5 lg:py-3 lg:px-5">
+            <p className="bg-gradient-to-br from-lavender-indigo to-very-light-blue bg-clip-text text-[length:8px] font-medium text-transparent md:text-sm">
+              How It Works
+            </p>
+          </button>
+        </div>
       </div>
       <img
         src={DashboardBanner}
