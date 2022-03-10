@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom";
-import { Navbar, Sidebar } from "./components";
+// import { Outlet } from "react-router-dom";
+import { Dashboard, Navbar, Sidebar } from "./components";
 
 function App() {
   return (
@@ -10,7 +10,10 @@ function App() {
       </div>
       <div className="w-full">
         <Navbar />
-        <Outlet />
+        <div className="p-4">
+          {/* <Outlet /> */}
+          <Dashboard />
+        </div>
       </div>
     </div>
   );
