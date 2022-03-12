@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "src/components";
+import { Header, Category } from "src/components";
 
 function Dashboard() {
   return (
@@ -7,7 +7,10 @@ function Dashboard() {
       <div className="md:col-span7 xl:col-span-8">
         <Header />
       </div>
-      <h1>Dashboard</h1>
+      <div className="mt-6 md:order-3 md:col-span-7 md:mt-0 xl:col-span-8">
+        <h1 className="text-xl font-semibold text-white">Explore</h1>
+        <Category />
+      </div>
     </div>
   );
 }
