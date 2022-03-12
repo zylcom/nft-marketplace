@@ -9,6 +9,7 @@ import MenuItem from "./MenuItem";
 import Dashboard from "./Dashboard";
 import Header from "./Header";
 import CategoryItem from "./CategoryItem";
+import Category from "./Category";
 
 // Export component
 export {
@@ -22,4 +23,5 @@ export {
   Dashboard,
   Header,
   CategoryItem,
+  Category,
 };
