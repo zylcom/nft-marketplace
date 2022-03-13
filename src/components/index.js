@@ -11,6 +11,7 @@ import Header from "./Header";
 import CategoryItem from "./CategoryItem";
 import Category from "./Category";
 import Card from "./Card";
+import TopArtist from "./TopArtist";
 
 // Export component
 export {
@@ -26,4 +27,5 @@ export {
   CategoryItem,
   Category,
   Card,
+  TopArtist,
 };
