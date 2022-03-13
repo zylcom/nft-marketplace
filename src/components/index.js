@@ -13,6 +13,7 @@ import Category from "./Category";
 import Card from "./Card";
 import TopArtist from "./TopArtist";
 import User from "./User";
+import Activity from "./Activity";
 
 // Export component
 export {
@@ -30,4 +31,5 @@ export {
   Card,
   TopArtist,
   User,
+  Activity,
 };
