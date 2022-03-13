@@ -10,6 +10,7 @@ import Dashboard from "./Dashboard";
 import Header from "./Header";
 import CategoryItem from "./CategoryItem";
 import Category from "./Category";
+import Card from "./Card";
 
 // Export component
 export {
@@ -24,4 +25,5 @@ export {
   Header,
   CategoryItem,
   Category,
+  Card,
 };
