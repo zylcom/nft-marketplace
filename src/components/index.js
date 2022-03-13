@@ -12,6 +12,7 @@ import CategoryItem from "./CategoryItem";
 import Category from "./Category";
 import Card from "./Card";
 import TopArtist from "./TopArtist";
+import User from "./User";
 
 // Export component
 export {
@@ -28,4 +29,5 @@ export {
   Category,
   Card,
   TopArtist,
+  User,
 };
