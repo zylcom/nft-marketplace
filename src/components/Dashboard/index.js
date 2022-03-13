@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Category, Card } from "src/components";
+import { Header, Category, Card, TopArtist } from "src/components";
 
 function Dashboard() {
   return (
@@ -18,6 +18,12 @@ function Dashboard() {
             <Card />
             <Card />
           </div>
+        </div>
+      </div>
+      <div className="top-artist-wrapper mt-[503px] rounded-[20px] bg-[#262D3A] p-5 md:order-2 md:col-span-5 md:mt-0 xl:col-span-4">
+        <h1 className="mb-5 text-xl font-semibold text-white">Top Artist</h1>
+        <div className="artist-list-wrapper flex max-h-80 flex-col gap-y-5 overflow-y-auto">
+          <TopArtist />
         </div>
       </div>
     </div>
