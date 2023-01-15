@@ -30,7 +30,7 @@ function Navbar() {
               />
               <input
                 type="text"
-                className="mx-0 w-full bg-transparent text-white sm:ml-2.5"
+                className="mx-0 w-full bg-transparent text-white focus:outline-none focus:ring-0 sm:ml-2.5"
                 name="search"
                 id="search"
                 placeholder="Search"

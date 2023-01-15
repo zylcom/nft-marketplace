@@ -11,7 +11,7 @@ import { MenuItem } from "src/components";
 function Menu() {
   return (
     <div className="flex flex-col py-6">
-      <MenuItem img={DashboardIcon} text="Dashboard" />
+      <MenuItem img={DashboardIcon} text="Dashboard" active />
       <MenuItem img={ActivityIcon} text="Activity" />
       <MenuItem img={TransactionIcon} text="Transactions" />
       <MenuItem img={CollectionIcon} text="Collections" />

@@ -1,15 +1,21 @@
 import React from "react";
 import { Avatar } from "src/components";
 
-function User() {
+function User({ avatarUrl, name, info }) {
   return (
-    <div className="flex items-center">
+    <div className="flex max-w-full items-center truncate">
       <div className="mr-2">
-        <Avatar img="https://picsum.photos/720" />
+        <Avatar img={avatarUrl} />
       </div>
-      <div>
-        <p className="text-sm font-medium text-white">Sabilillah</p>
-        <p className="mt-1 text-xs text-[color:#878787]">@zylcom</p>
+
+      <div className="flex grow-0 flex-col">
+        <p className="truncate text-sm font-medium text-white" title={name}>
+          {name}
+        </p>
+
+        <p className="mt-1 text-xs text-[color:#878787]" title={info}>
+          {info}
+        </p>
       </div>
     </div>
   );
