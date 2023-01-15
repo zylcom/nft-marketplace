@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Header, Category, Card, TopArtist, Activity } from "src/components";
 import { getPostsByCategoryId } from "src/services/apiServices";
 import { activities } from "src/utils/data";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 function Dashboard() {
   const [posts, setPosts] = useState([]);
@@ -34,14 +39,28 @@ function Dashboard() {
           categoryId={categoryId}
           changeCategoryIdHandler={onChangeCategoryId}
         />
-        <div className="outer-card-wrapper absolute mt-[127px] h-[90vw] w-[66vh] min-w-[400px] max-w-[410px] origin-top-left translate-y-[340px] -rotate-90 select-none overflow-y-auto md:relative md:mt-[83px] md:h-auto md:w-auto md:max-w-none md:transform-none">
-          <div className="flex w-auto origin-top-left translate-x-96 rotate-90 flex-row gap-3 md:grid md:transform-none md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {posts.map((post) => (
-              <Card key={post.id} {...post} />
-            ))}
-          </div>
-        </div>
+
+        <Swiper
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            1280: { slidesPerView: 3 },
+          }}
+          slidesPerView={1}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="top-20"
+        >
+          {posts.map((post) => (
+            <SwiperSlide key={post.id}>
+              <Card {...post} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
+
       <div className="top-artist-wrapper mt-[503px] rounded-[20px] bg-[#262D3A] p-5 md:order-2 md:col-span-5 md:mt-0 xl:col-span-4">
         <h1 className="mb-5 text-xl font-semibold text-white">Top Artist</h1>
         <TopArtist />
