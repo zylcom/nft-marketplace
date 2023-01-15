@@ -1,17 +1,23 @@
-// import { Outlet } from "react-router-dom";
+import { useState } from "react";
 import { Dashboard, Navbar, Sidebar } from "./components";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  function toggleMenu() {
+    setIsMenuOpen((prevState) => !prevState);
+  }
+
   return (
     <div className="h-screen lg:flex">
       <div>
         <div className="w-[120px]"></div>
-        <Sidebar />
+        <Sidebar openMenu={isMenuOpen} clickHandler={toggleMenu} />
       </div>
       <div className="w-full">
-        <Navbar />
+        <Navbar clickHandler={toggleMenu} />
+
         <div className="p-4">
-          {/* <Outlet /> */}
           <Dashboard />
         </div>
       </div>
